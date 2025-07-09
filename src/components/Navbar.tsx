@@ -3,7 +3,6 @@ import { Link, useLocation } from "react-router-dom";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 
-import logo from "../../public/skillup-africa-logo.svg";
 import { navLinks } from "./index";
 
 function Navbar() {
@@ -14,48 +13,29 @@ function Navbar() {
     <header className="h-20 relative z-50 py-8 pb-10 bg-[#FDF8EE]">
       <div className="mx-auto w-full h-full max-w-7xl flex items-center justify-between px-4">
         <Link to="/" className="flex flex-row items-center justify-center">
-          <img src={logo} alt="logo" className="w-24 md:w-32 object-contain" />
+          <img
+            src="/skillup-africa-logo.svg"
+            alt="logo"
+            className="w-24 md:w-32 object-contain"
+          />
           <p className="text-black font-bold text-2xl">SkillUP-Africa</p>
         </Link>
 
-        {pathname === "/" ? (
-          <div className="flex flex-row gap-8">
+        <nav className="hidden md:flex flex-row items-center gap-8 pr-8 text-base font-semibold">
+          {navLinks.map(({ id, title, link }) => (
             <Link
-              to={"/home"}
-              className="bg-primary text-white px-6 py-3 text-base font-semibold rounded-full hidden md:flex"
+              key={id}
+              to={link}
+              className={`${
+                link === pathname
+                  ? "text-primary font-bold"
+                  : "text-black font-medium"
+              } `}
             >
-              Home
+              {title}
             </Link>
-            <Link
-              to={"/"}
-              className="bg-primary text-white px-6 py-3 text-base font-semibold rounded-full hidden md:flex"
-            >
-              Sign up
-            </Link>
-            <Link
-              to={"/"}
-              className="bg-primary text-white px-6 py-3 text-base font-semibold rounded-full hidden md:flex"
-            >
-              Log in
-            </Link>
-          </div>
-        ) : (
-          <nav className="hidden md:flex flex-row items-center gap-8 pr-8 text-base font-semibold">
-            {navLinks.map(({ id, title, link }) => (
-              <Link
-                key={id}
-                to={link}
-                className={`${
-                  link === pathname
-                    ? "text-primary font-bold"
-                    : "text-black font-medium"
-                } `}
-              >
-                {title}
-              </Link>
-            ))}
-          </nav>
-        )}
+          ))}
+        </nav>
 
         {/* Hamburger menu for mobile screens */}
         <div className="flex-center md:hidden mr-3 px-1">

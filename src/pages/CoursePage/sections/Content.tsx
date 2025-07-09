@@ -91,8 +91,8 @@ const NavigationTabs = ({ activeTab, handleTabClick }: NavigationTabsProps) => {
           onClick={() => handleTabClick(tab.id)}
           className={
             activeTab === tab.id
-              ? "flex h-10 cursor-pointer items-center text-xl rounded-full bg-secondary text-white font-semibold px-8 py-5 mx-4 transition-all ease-in"
-              : "flex h-10 cursor-pointer items-center text-xl bg-white rounded-full px-8 py-5 mx-4 transition-all ease-in"
+              ? "flex h-10 cursor-pointer items-center text-lg rounded-full bg-secondary text-white font-semibold px-8 py-5 mx-4 transition-all ease-in"
+              : "flex h-10 cursor-pointer items-center text-lg bg-white rounded-full px-8 py-5 mx-4 transition-all ease-in"
           }
         >
           {tab.name}

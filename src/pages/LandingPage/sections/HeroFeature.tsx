@@ -13,10 +13,11 @@ const HeroFeature = () => {
             className="w-16 h-16 p-4 bg-white/30 rounded-xl"
           />
           <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold">Learn The Latest Skills</h2>
-            <p className="font-extralight">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry that is 2000 years old.
+            <h2 className="text-xl font-semibold">Learn The Latest Skills</h2>
+            <p className="text-sm font-extralight">
+              Our platform offers valuable skills like plumbing, mechanical
+              work, electrical work and many others to help PWDs excel in their
+              area of work.
             </p>
           </div>
         </div>
@@ -28,24 +29,28 @@ const HeroFeature = () => {
             className="w-16 h-16 p-4 bg-white/30 rounded-xl"
           />
           <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold">Advance Your Career</h2>
-            <p className="font-extralight">
-              Our platform offers valuable skills like plumbing, mechanical works, electrical works and many others to help PWDs excel in their careers. 
-              </p>
+            <h2 className="text-xl font-semibold">Get Ready For a Career</h2>
+            <p className="text-sm font-extralight">
+              Preparing for a career as a person with a disability involves
+              exploring your interests, developing relevant skills, and
+              networking with professionals in your field.
+            </p>
           </div>
         </div>
 
-        <div className="flex flex-row items-center justify-center gap-4">
+        <div className="flex flex-row items-center justify-center gap-4 max-w-96">
           <img
             src={certificateIcon}
             alt="certificate-icon"
             className="w-16 h-16 p-4 bg-white/30 rounded-xl"
           />
           <div className="flex flex-col gap-2">
-            <h2 className="text-2xl font-semibold">Earn Certificates</h2>
-            <p className="font-extralight">
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry that is 2000 years old.
+            <h2 className="text-xl font-semibold">Earn a Certificate</h2>
+            <p className="text-sm font-extralight">
+              Earning a certificate can enhance your skills and career
+              opportunities, so choose a program that aligns with your
+              interests. Completing the program demonstrates your commitment and
+              showcases your abilities to potential employers.
             </p>
           </div>
         </div>

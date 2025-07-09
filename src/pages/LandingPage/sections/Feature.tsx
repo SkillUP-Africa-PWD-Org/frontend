@@ -25,8 +25,7 @@ const Feature = () => {
                   Easily Accessible
                 </h2>
                 <p className="text-black">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Learning will feel very comfortable with Courslab.
                 </p>
               </div>
             </div>
@@ -34,11 +33,10 @@ const Feature = () => {
               <img src={featureIcon2} alt="feature icon 2" />
               <div className="flex flex-col gap-2">
                 <h2 className="text-2xl font-bold text-black">
-                  Fun Learning Experience
+                  Fun learning experience
                 </h2>
                 <p className="text-black">
-                  Lorem Ipsum is simply dummy text of the printing and
-                  typesetting industry.
+                  Learning will feel very comfortable with Courslab.
                 </p>
               </div>
             </div>
